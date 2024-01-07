@@ -5,9 +5,9 @@ int main()
 {
     // Write C++ code here
     int x;
+    cout << "Ingrese un valor:";
     cin >> x;
     cout << x / 3 << ' ' << x * 2;
-    cout << "Hello world";
 
     return 0;
 }
