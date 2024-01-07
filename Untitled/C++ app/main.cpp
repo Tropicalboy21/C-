@@ -6,15 +6,16 @@ int main()
     // Write C++ code here
     int x;
     int y;
-    cout << "Ingrese el segundo valor:";
+    cout << "Enter the first value:";
     cin >> x;
-    cout << "Ingrese el primer valor:";
+    cout << "Enter the second value:";
     cin >> y;
     if (x > y)
-        cout << "x is greater than one";
-
-    cout << x / 3 << ' ' << x * 2;
-    cout << "Hello worlds";
+        cout << "first value is greater than the second value";
+    else if (x < y)
+        cout << "second value is greater than the first value";
+    else
+        cout << "both values are equal";
 
     return 0;
 }
