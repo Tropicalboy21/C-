@@ -6,7 +6,7 @@ int main()
     // Write C++ code here
     int x;
     int y;
-    cout << "Enter the first value:";
+    cout << "Enter the a value:";
     cin >> x;
     cout << "Enter the second value:";
     cin >> y;
