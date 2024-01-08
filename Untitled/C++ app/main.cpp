@@ -15,7 +15,7 @@ int main()
         break;
     case 2:
     case 3:
-        cout << "x is equal to 2 or 3\n";
+        cout << "\nx is equal to 2 or 3";
         break;
 
     default:
