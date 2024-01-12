@@ -14,7 +14,7 @@ int main()
 
     while (i < n)
     {
-        cout << message;
+        cout << message + "\n";
         i++;
     }
 
