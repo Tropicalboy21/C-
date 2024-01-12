@@ -5,7 +5,7 @@ int main()
 {
 
     int x = 0;
-    cout << "Enter the a value:";
+    cout << "Enter the number of times: ";
     cin >> x;
 
     const string message = "Hello, world!";
