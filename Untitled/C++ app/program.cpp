@@ -4,11 +4,18 @@ using namespace std;
 int main()
 {
 
-    int x = 0;
+    int n = 0;
     cout << "Enter the number of times: ";
-    cin >> x;
+    cin >> n;
 
     const string message = "Hello, world!";
-    cout << message;
+
+    int i = 0;
+
+    while (i < n)
+    {
+        cout << message;
+    }
+
     return 0;
 }
