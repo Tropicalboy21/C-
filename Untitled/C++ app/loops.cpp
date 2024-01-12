@@ -9,4 +9,9 @@ int main()
             cout << y;
         cout << "\n";
     }
+
+    for (int i = 0; i < 10;)
+    {
+        cout << ++i << "\n";
+    }
 }
