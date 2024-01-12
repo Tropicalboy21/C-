@@ -8,9 +8,11 @@ int main()
     cout << "Enter the number of times: ";
     cin >> n;
 
-    const string message = "Hello, world!";
+    string message = "Hello, world!";
 
     int i = 0;
+
+    string message = "Hello, Universe!";
 
     while (i < n)
     {
