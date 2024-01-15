@@ -15,9 +15,18 @@ int main()
         cin >> numbers[i];
     }
 
-    for (int j = 0; j < n; j++)
+    cout << n % 2;
+
+    if (n % 2 == 0)
     {
-        cout << numbers[j];
+    }
+    else
+    {
+
+        for (int j = 0; j < n; j++)
+        {
+            cout << numbers[j];
+        }
     }
 
     return 0;
