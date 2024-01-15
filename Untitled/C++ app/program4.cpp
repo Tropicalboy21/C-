@@ -4,13 +4,14 @@ using namespace std;
 int main()
 {
     int n = 0;
-    cout << "Please enter the number of digits";
+    cout << "Please enter the number of digits: \n";
     cin >> n;
 
     int numbers[n];
 
     for (int i = 0; i < n; i++)
     {
+        cout << "Please enter the digit number";
         cin >> numbers[i];
     }
 
