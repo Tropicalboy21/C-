@@ -14,5 +14,10 @@ int main()
         cin >> numbers[i];
     }
 
+    for (int j = 0; j < n; j++)
+    {
+        cout << numbers[j];
+    }
+
     return 0;
 }
