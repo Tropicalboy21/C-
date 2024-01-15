@@ -11,7 +11,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        cout << "Please enter the digit number" << i + 1;
+        cout << "Please enter the digit number #" << i + 1 << " ";
         cin >> numbers[i];
     }
 
