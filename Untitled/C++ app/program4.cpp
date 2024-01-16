@@ -21,8 +21,11 @@ int main()
 
     int size = sizeof(numbers) / sizeof(numbers[0]);
 
+    double sum = 0;
+
     for (int y = 0; y < size; y++)
     {
+        sum += numbers[y];
         if (numbers[y] > maxNumber)
         {
             maxNumber = numbers[y];
@@ -33,22 +36,13 @@ int main()
         }
     }
 
-    int mean = numbers[0];
-    int sum = 0;
-
-    if (n % 2 == 0)
-    {
-        sum = numbers[n / 2] + numbers[n / 2 - 1];
-        mean = sum / 2;
-    }
-    else
-    {
-        mean = numbers[n / 2];
-    }
+    double mean = sum / n;
+    int range = maxNumber - minNumber;
 
     cout << "mean: " << mean << "\n";
     cout << "min: " << minNumber << "\n";
     cout << "max: " << maxNumber << "\n";
+    cout << "range: " << range << "\n";
 
     return 0;
 }
