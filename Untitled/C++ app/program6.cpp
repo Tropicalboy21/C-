@@ -14,13 +14,18 @@ int main()
 
         int c = x % 5;
 
+        if (x == -1 || x < 0)
+        {
+            cout << "Goodbye";
+            break;
+        }
+
         c == 0 &&x >= 0 ? n = false : n = true;
 
         if (n == false)
         {
             cout << "The number " << x << " is divisible by 5";
         }
-        continue;
     }
 
     return 0;
