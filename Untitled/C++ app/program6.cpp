@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Ternary operators
+
 int main()
 {
     bool n = true;
@@ -12,7 +14,13 @@ int main()
 
         int c = x % 5;
 
-        c == 0 ? n = false : n = true;
+        c == 0 &&x >= 0 ? n = false : n = true;
+
+        if (n == false)
+        {
+            cout << "The number " << x << " is divisible by 5";
+        }
+        continue;
     }
 
     return 0;
