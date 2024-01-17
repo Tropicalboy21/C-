@@ -17,7 +17,6 @@ bool isPrime(int num)
 }
 
 std::vector<int> firstNPrimes(int n)
-
 {
     std::vector<int> primes;
     int num = 2;
