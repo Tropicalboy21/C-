@@ -1,1 +1,1 @@
-using namespace std;
+return true;
