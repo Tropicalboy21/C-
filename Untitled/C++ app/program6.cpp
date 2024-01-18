@@ -20,7 +20,7 @@ int main()
             break;
         }
 
-        c == 0 &&x >= 0 ? n = false : n = true;
+        c == 0 ? n = false : n = true;
 
         if (n == false)
         {
