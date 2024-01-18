@@ -14,7 +14,7 @@ int main()
 
         int c = x % 5;
 
-        if (x == -1 || x < 0)
+        if (x < 0)
         {
             cout << "Goodbye";
             break;
