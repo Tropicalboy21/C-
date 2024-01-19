@@ -16,7 +16,7 @@ int main()
     }
     cout << "5^6 equals to: " << sixExpFive << endl;
     int twelveExpTen = 1;
-    for (int i = 0; i < 5; i = i + 1)
+    for (int i = 0; i < 10; i = i + 1)
     {
         twelveExpTen = twelveExpTen * 12;
     }
