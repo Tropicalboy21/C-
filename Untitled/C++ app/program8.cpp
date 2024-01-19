@@ -3,11 +3,18 @@ using namespace std;
 
 int main()
 {
-    int ThreeExpFour = 1;
+    int threeExpFour = 1;
     for (int i = 0; i < 4; i = i + 1)
     {
-        ThreeExpFour = ThreeExpFour * 3;
+        threeExpFour = threeExpFour * 3;
     }
-    cout << "3^4 equals to: " << ThreeExpFour << endl;
+    cout << "3^4 equals to: " << threeExpFour << endl;
+    int sixExpFive = 1;
+    for (int i = 0; i < 5; i = i + 1)
+    {
+        sixExpFive = sixExpFive * 6;
+    }
+    cout << "5^6 equals to: " << sixExpFive << endl;
+
     return 0;
 }
