@@ -1,24 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int marsExploration(string s)
+int marsExploration(string orgMessage)
 {
-    int l = s.length() / 3;
+    int length = orgMessage.length();
+    int number = orgMessage.length() / 3;
+
+    string call = "SOS";
 
     string expMessage = "";
 
-    for (int i = 0; i < l; i++)
+    int count = 0;
+
+    for (int i = 0; i < number; i = i + 1)
     {
-        expMessage += s;
+        expMessage += call;
     }
-    cout << expMessage << endl;
-    return 0;
+
+    for (int j = 0; j < length; j++)
+    {
+        orgMessage[j] != expMessage[j] ? count += 1 : count;
+    }
+    return count;
 }
 
 int main()
 {
 
-    string message = "SOSSOSSOS";
+    string message = "SOSSPSSQSSOR";
 
     marsExploration(message);
 
