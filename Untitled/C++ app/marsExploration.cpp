@@ -3,13 +3,11 @@ using namespace std;
 
 int marsExploration(string s)
 {
-    int l = s.length();
-
-    int numMessages = l / 3;
+    int l = s.length() / 3;
 
     string expMessage = "";
 
-    for (int i = 0; i < numMessages; i++)
+    for (int i = 0; i < l; i++)
     {
         expMessage += s;
     }
