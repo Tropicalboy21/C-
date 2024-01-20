@@ -11,12 +11,18 @@ int marsExploration(string s)
 
     for (int i = 0; i < numMessages; i++)
     {
-        expMessage = s
+        expMessage += s;
     }
+    cout << expMessage << endl;
+    return 0;
 }
 
 int main()
 {
+
+    string message = "SOSSOSSOS";
+
+    marsExploration(message);
 
     return 0;
 }
