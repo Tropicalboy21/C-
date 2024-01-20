@@ -7,7 +7,7 @@ int marsExploration(string s)
 
     int numMessages = l / 3;
 
-    string expMessage = "message";
+    string expMessage = "";
 
     for (int i = 0; i < numMessages; i++)
     {
