@@ -6,7 +6,7 @@ int main()
     int x;
     int *ptr = &x;
 
-    cout << *ptr;
+    cout << ptr;
 
     return 0;
 }
