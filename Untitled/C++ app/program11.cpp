@@ -9,6 +9,7 @@ void squareRoot(int *numPtr)
 int main()
 {
     int x = 5;
-
+    squareRoot(&x);
+    cout << x;
     return 0;
 }
