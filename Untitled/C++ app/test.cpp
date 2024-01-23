@@ -10,7 +10,7 @@ int main()
 
     while (i <= 5)
     {
-        cout << "\nBienvenido a la agencia de carros NO ande a Pie ";
+        cout << "\nBienvenido a la agencia de carros NO ande a Pie";
         cout << "----- Menu -----";
         cout << "Selecione una opcion";
         cout << "1. registrar marca";
@@ -23,7 +23,19 @@ int main()
         {
             cout << "Ingrese una marca: ";
             cin >> marca;
-            marcas[i] =
+            marcas[i] = marca;
+            i = i + 1;
+        }
+        if (opcion == 2)
+        {
+            for (string marca : marcas)
+            {
+                cout << marca;
+            }
+        }
+        if (opcion == 3)
+        {
+            break;
         }
     }
 
