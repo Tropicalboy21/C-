@@ -9,5 +9,7 @@ int main()
     cout << "\nBienvenido a la agencia de carros NO ande a Pie ";
     cout << "----- Menu -----";
     cout << "Selecione una opcion";
-    cout << "" return 0;
+    cout << "1. registrar marca";
+    cout << "2. listar marcas";
+    return 0;
 }
