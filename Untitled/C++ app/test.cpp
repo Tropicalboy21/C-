@@ -6,6 +6,8 @@ int main()
     string name = " Lenin";
     string message = "Hello world my name is";
 
-    cout << message << name;
-    return 0;
+    cout << "\nBienvenido a la agencia de carros NO ande a Pie ";
+    cout << "----- Menu -----";
+    cout << "Selecione una opcion";
+    cout << "" return 0;
 }
