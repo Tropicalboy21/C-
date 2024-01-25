@@ -5,6 +5,7 @@ int opcion = 0;
 
 void menu()
 {
+
     cout << "Bienvenido a la agencia de carros NO ande a Pie"
          << "\n";
     cout << "----- Menu -----"
@@ -21,7 +22,5 @@ void menu()
 
 int main()
 {
-    menu();
-
     return 0;
 }
