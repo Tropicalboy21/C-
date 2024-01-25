@@ -3,6 +3,12 @@ using namespace std;
 
 int opcion = 0;
 
+int main()
+{
+    menu();
+    return 0;
+}
+
 void menu()
 {
     do
@@ -23,8 +29,20 @@ void menu()
     } while (opcion != 4);
 }
 
-int main()
+void procesarOpcion(int opcion)
 {
-    menu();
-    return 0;
+
+    switch (opcion)
+    {
+    case 1:
+        registrarMarca();
+        break;
+
+    default:
+        break;
+    }
+}
+
+void registrarMarca()
+{
 }
