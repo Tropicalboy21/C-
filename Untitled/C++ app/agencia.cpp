@@ -1,10 +1,5 @@
-#include <iostream>;
+#include <iostream>
 using namespace std;
-
-int main()
-{
-    menu();
-}
 
 void menu()
 {
@@ -17,4 +12,11 @@ void menu()
     default:
         break;
     }
+}
+
+int main()
+{
+    menu();
+
+    return 0;
 }
