@@ -3,12 +3,6 @@ using namespace std;
 
 int opcion = 0;
 
-int main()
-{
-    menu();
-    return 0;
-}
-
 void menu()
 {
     do
@@ -29,6 +23,11 @@ void menu()
     } while (opcion != 4);
 }
 
+void registrarMarca()
+{
+    cout << "Ingrese el nombre de la Marca: ";
+}
+
 void procesarOpcion(int opcion)
 {
 
@@ -43,6 +42,8 @@ void procesarOpcion(int opcion)
     }
 }
 
-void registrarMarca()
+int main()
 {
+    menu();
+    return 0;
 }
