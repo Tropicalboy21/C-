@@ -7,13 +7,13 @@ void menu()
          << "\n";
     cout << "----- Menu -----"
          << "\n";
-    cout << "Selecione una opcion"
-         << "\n";
     cout << "1. registrar marca"
          << "\n";
     cout << "2. listar marcas"
          << "\n";
     cout << "3. Salir"
+         << "\n";
+    cout << "Porfavor selecione una opcion"
          << "\n";
 }
 
