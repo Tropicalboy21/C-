@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int opcion = 0;
+
 void menu()
 {
     cout << "Bienvenido a la agencia de carros NO ande a Pie"
