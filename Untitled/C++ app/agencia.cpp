@@ -2,12 +2,34 @@
 using namespace std;
 
 int opcion = 0;
+const int tamanno = 5;
+string marcas[tamanno];
+int i = 0;
 
 void registrarMarca()
 {
     string marca = "";
     cout << "Ingrese el nombre de la Marca: ";
     cin >> marca;
+
+    if (marcas[i] != "")
+    {
+        marcas[i] = marca;
+        i++;
+        cout << "la marca " << marca << "fue agregada con exito";
+    }
+    else
+    {
+        cout << "No hay mas espacio";
+    }
+}
+
+void listarMarcas()
+{
+    for (string marca : marcas)
+    {
+        cout << marca;
+    }
 }
 
 void procesarOpcion(int opcion)
@@ -17,6 +39,10 @@ void procesarOpcion(int opcion)
     {
     case 1:
         registrarMarca();
+        break;
+
+    case 2:
+        listarMarcas();
         break;
 
     default:
