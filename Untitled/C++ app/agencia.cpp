@@ -5,7 +5,7 @@ int opcion = 0;
 
 void registrarMarca()
 {
-    string marca = '';
+    string marca = "";
     cout << "Ingrese el nombre de la Marca: ";
     cin >> marca;
 }
