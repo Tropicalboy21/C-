@@ -39,6 +39,7 @@ void menu()
         cout << "Porfavor selecione una opcion"
              << "\n";
         cin >> opcion;
+        procesarOpcion(opcion);
     } while (opcion != 4);
 }
 
