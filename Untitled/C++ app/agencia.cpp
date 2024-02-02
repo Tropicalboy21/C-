@@ -29,7 +29,8 @@ void listarMarcas()
 {
     for (string marca : marcas)
     {
-        cout << marca << "\n";
+        cout << "\n"
+             << marca << "\n";
     }
 }
 
