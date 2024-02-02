@@ -12,7 +12,7 @@ void registrarMarca()
     cout << "Ingrese el nombre de la Marca: ";
     cin >> marca;
 
-    if (!marcas[i].empty())
+    if (marcas[i].empty() == 0)
     {
         marcas[i] = marca;
         i++;
