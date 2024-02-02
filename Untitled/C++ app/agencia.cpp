@@ -9,7 +9,7 @@ int i = 0;
 void registrarMarca()
 {
     string marca = "";
-    cout << "Ingrese el nombre de la Marca: ";
+    cout << "\nIngrese el nombre de la Marca: ";
     cin >> marca;
     int pos = i;
 
@@ -17,7 +17,7 @@ void registrarMarca()
     {
         marcas[i] = marca;
         i++;
-        cout << "la marca " << marca << "fue agregada con exito";
+        cout << "la marca " << marca << " fue agregada con exito. \n";
     }
     else
     {
@@ -29,7 +29,7 @@ void listarMarcas()
 {
     for (string marca : marcas)
     {
-        cout << marca;
+        cout << marca << "\n";
     }
 }
 
@@ -55,7 +55,9 @@ void menu()
 {
     do
     {
-        cout << "Bienvenido a la agencia de carros NO ande a Pie"
+
+        cout << "\n"
+             << "Bienvenido a la agencia de carros"
              << "\n";
         cout << "----- Menu -----"
              << "\n";
@@ -65,8 +67,7 @@ void menu()
              << "\n";
         cout << "3. Salir"
              << "\n";
-        cout << "Porfavor selecione una opcion"
-             << "\n";
+        cout << "Porfavor selecione una opcion: ";
         cin >> opcion;
         procesarOpcion(opcion);
     } while (opcion != 4);
