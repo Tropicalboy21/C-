@@ -4,22 +4,22 @@
 using namespace std;
 
 int opcion = 0;
-const int tamanno = 5;
-string marcas[tamanno];
+const int maxSize = 5;
+std::array<std::string, maxSize> marcas;
 int i = 0;
 
 void registrarMarca()
 {
     string marca = "";
-    cout << "\nIngrese el nombre de la Marca: ";
-    cin >> marca;
 
-    if (marcas->size() == tamanno)
+    if (i == maxSize)
     {
         cout << "No hay mas espacio";
     }
     else
     {
+        cout << "\nIngrese el nombre de la Marca: ";
+        cin >> marca;
         marcas[i] = marca;
         i++;
         cout << "la marca " << marca << " fue agregada con exito. \n";
@@ -77,6 +77,7 @@ void menu()
 
 int main()
 {
+
     menu();
     return 0;
 }
