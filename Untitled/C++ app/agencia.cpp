@@ -2,7 +2,7 @@
 using namespace std;
 
 int opcion = 0;
-const int tamanno = 5;
+const int tamanno = 6;
 string marcas[tamanno];
 int i = 0;
 
