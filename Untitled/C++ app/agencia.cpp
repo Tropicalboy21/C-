@@ -1,8 +1,10 @@
 #include <iostream>
+#include <array>
+#include <string>
 using namespace std;
 
 int opcion = 0;
-const int tamanno = 6;
+const int tamanno = 5;
 string marcas[tamanno];
 int i = 0;
 
