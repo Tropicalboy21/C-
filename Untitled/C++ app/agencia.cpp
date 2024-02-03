@@ -11,17 +11,16 @@ void registrarMarca()
     string marca = "";
     cout << "\nIngrese el nombre de la Marca: ";
     cin >> marca;
-    int pos = i;
 
-    if (marcas[pos].empty())
+    if (marcas->size() == tamanno)
+    {
+        cout << "No hay mas espacio";
+    }
+    else
     {
         marcas[i] = marca;
         i++;
         cout << "la marca " << marca << " fue agregada con exito. \n";
-    }
-    else
-    {
-        cout << "No hay mas espacio";
     }
 }
 
