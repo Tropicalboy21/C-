@@ -14,7 +14,7 @@ void registrarMarca()
 
     if (i == maxSize)
     {
-        cout << "No hay mas espacio";
+        std::cout << "\nNo hay mas espacio." << std::endl;
     }
     else
     {
