@@ -67,8 +67,8 @@ void listarMarcas()
     std::cout << "\n***** Listado de marcas *****" << std::endl;
     for (int pos = 0; pos < marcas.size(); pos++)
     {
-        if (marcas[pos] != 0)
-            cout << pos + 1 << "." << marcas[pos] << "-> Cantidad de vehiculos : " << cantidadAutos[pos] << std::endl;
+        if (!marcas[pos].empty())
+            cout << pos + 1 << ". " << marcas[pos] << " -> Cantidad de vehiculos : " << cantidadAutos[pos] << std::endl;
     }
 }
 
