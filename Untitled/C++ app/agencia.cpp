@@ -6,6 +6,7 @@ using namespace std;
 int opcion = 0;
 const int maxSize = 5;
 std::array<std::string, maxSize> marcas;
+int cantidadAuto[maxSize];
 int i = 0;
 
 int buscarMarca(string numMarca)
@@ -16,6 +17,7 @@ int buscarMarca(string numMarca)
         {
             return pos;
         }
+        return -1;
     }
 }
 
@@ -43,6 +45,20 @@ void registrarNumVehiculos()
     string nomMarca = "";
 
     int posicion = buscarMarca(nomMarca);
+
+    if (posicion >= 0)
+    {
+        std::cout << "Porfavor digite la cantidad de autos de la marca " << nomMarca << " :" << std::endl;
+        int cantidad;
+
+        std::cin >> cantidad;
+
+        cantidadAutos[posicion] = cantidad;
+    }
+    else
+    {
+        std::cout << "la marca digita no existe." << std::endl;
+    }
 }
 
 void listarMarcas()
