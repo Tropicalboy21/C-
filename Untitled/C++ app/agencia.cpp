@@ -6,18 +6,18 @@ using namespace std;
 int opcion = 0;
 const int maxSize = 5;
 std::array<std::string, maxSize> marcas;
-int cantidadAuto[maxSize];
+int cantidadAutos[maxSize];
 int i = 0;
 
 int buscarMarca(string numMarca)
 {
     for (int pos = 0; pos < marcas.size(); pos++)
     {
-        if (!marcas[pos].empty() && marcas[pos].compare(numMarca))
+        if (!marcas[pos].empty() && marcas[pos] == numMarca)
         {
             return pos;
         }
-        return -1;
+        return 0;
     }
 }
 
@@ -43,6 +43,7 @@ void registrarNumVehiculos()
 {
     std::cout << "Ingrese el nombre de la marca" << std::endl;
     string nomMarca = "";
+    std::cin >> nomMarca;
 
     int posicion = buscarMarca(nomMarca);
 
@@ -63,10 +64,11 @@ void registrarNumVehiculos()
 
 void listarMarcas()
 {
-    for (string marca : marcas)
+    std::cout << "\n***** Listado de marcas *****" << std::endl;
+    for (int pos = 0; pos < marcas.size(); pos++)
     {
-        cout << "\n"
-             << marca << "\n";
+        if (marcas[pos] != 0)
+            cout << pos + 1 << "." << marcas[pos] << "-> Cantidad de vehiculos : " << cantidadAutos[pos] << std::endl;
     }
 }
 
@@ -80,11 +82,11 @@ void procesarOpcion(int opcion)
         break;
 
     case 2:
-        listarMarcas();
+        registrarNumVehiculos();
         break;
 
     case 3:
-        registrarNumVehiculos();
+        listarMarcas();
         break;
 
     default:
