@@ -28,6 +28,8 @@ void registrarMarca()
 
 void registrarNumVehiculos()
 {
+    std::cout << "Ingrese el nombre de la marca" << std::endl;
+    string nomMarca = "";
 }
 
 void listarMarcas()
