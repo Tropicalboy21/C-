@@ -26,6 +26,10 @@ void registrarMarca()
     }
 }
 
+void registrarNumVehiculos()
+{
+}
+
 void listarMarcas()
 {
     for (string marca : marcas)
@@ -48,6 +52,10 @@ void procesarOpcion(int opcion)
         listarMarcas();
         break;
 
+    case 3:
+        registrarNumVehiculos();
+        break;
+
     default:
         break;
     }
@@ -65,14 +73,16 @@ void menu()
              << "\n";
         cout << "1. registrar marca"
              << "\n";
-        cout << "2. listar marcas"
+        cout << "2. registrar numero de vehiculos"
              << "\n";
-        cout << "3. Salir"
+        cout << "3. listar marcas"
+             << "\n";
+        cout << "4. Salir"
              << "\n";
         cout << "Porfavor selecione una opcion: ";
         cin >> opcion;
         procesarOpcion(opcion);
-    } while (opcion != 4);
+    } while (opcion != 5);
 }
 
 int main()
