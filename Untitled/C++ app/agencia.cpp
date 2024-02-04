@@ -8,7 +8,7 @@ const int maxSize = 5;
 std::array<std::string, maxSize> marcas;
 int i = 0;
 
-void buscarMarca(string numMarca)
+int buscarMarca(string numMarca)
 {
     for (int pos = 0; pos < marcas.size(); pos++)
     {
