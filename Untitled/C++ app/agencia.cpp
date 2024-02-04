@@ -9,16 +9,16 @@ std::array<std::string, maxSize> marcas;
 int cantidadAutos[maxSize];
 int i = 0;
 
-int buscarMarca(string numMarca)
+int buscarMarca(string nomMarca)
 {
     for (int pos = 0; pos < marcas.size(); pos++)
     {
-        if (!marcas[pos].empty() && marcas[pos] == numMarca)
+        if (!marcas[pos].empty() && marcas[pos] == nomMarca)
         {
             return pos;
         }
-        return 0;
     }
+    return -1;
 }
 
 void registrarMarca()
