@@ -8,6 +8,17 @@ const int maxSize = 5;
 std::array<std::string, maxSize> marcas;
 int i = 0;
 
+void buscarMarca(string numMarca)
+{
+    for (int pos = 0; pos < marcas.size(); pos++)
+    {
+        if (!marcas[pos].empty() && marcas[pos].compare(numMarca))
+        {
+            return pos;
+        }
+    }
+}
+
 void registrarMarca()
 {
     string marca = "";
@@ -30,6 +41,8 @@ void registrarNumVehiculos()
 {
     std::cout << "Ingrese el nombre de la marca" << std::endl;
     string nomMarca = "";
+
+    int posicion = buscarMarca(nomMarca);
 }
 
 void listarMarcas()
