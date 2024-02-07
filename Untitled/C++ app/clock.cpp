@@ -3,6 +3,25 @@ using namespace std;
 
 int opcion = 0;
 
+void procesarOpcion()
+{
+     switch (opcion)
+     {
+     case 1:
+          /* code */
+          break;
+     case 2:
+          /* code */
+          break;
+     case 3:
+          /* code */
+          break;
+
+     default:
+          break;
+     }
+}
+
 void menu()
 {
      do
