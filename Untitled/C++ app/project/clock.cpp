@@ -15,18 +15,23 @@ void registrarEmpleado()
 {
      cout << "digite el nombre del empleado";
      string nombreIn;
+     cin >> nombreIn;
 
      cout << "Porfavor ingrese la identificación del empleado: ";
-     string identificacionIn = sc.next();
+     string identificacionIn;
+     cin >> identificacionIn;
 
      cout << "Porfavor ingrese un genero F. Femenino, M. Masculino, O. No decir : ";
      string generoIn;
+     cin >> generoIn;
 
      cout << "Porfavor ingrese la edad: ";
      int edadIn;
+     cin >> edadIn;
 
      cout << "Porfavor ingrese la posición de trabajo: ";
      string puestoIn;
+     cin >> puestoIn;
 }
 
 void procesarOpcion()
