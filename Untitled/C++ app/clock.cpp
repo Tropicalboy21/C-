@@ -9,6 +9,7 @@ void listarEmpleado()
 
 void registrarEmpleado()
 {
+     cout << "digite el nombre del empleado";
 }
 
 void procesarOpcion()
