@@ -3,6 +3,10 @@ using namespace std;
 
 int opcion = 0;
 
+void listarEmpleado()
+{
+}
+
 void registrarEmpleado()
 {
 }
