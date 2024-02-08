@@ -1,6 +1,12 @@
+#include <iostream>
+using namespace std;
+
 class empleado
 {
 public:
-    empleado(/* args */);
-    ~empleado();
+    string nombre;
+    string identificacion;
+    string genero;
+    int edad;
+    string puesto;
 };
