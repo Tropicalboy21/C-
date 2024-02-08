@@ -3,12 +3,16 @@ using namespace std;
 
 int opcion = 0;
 
+void registrarEmpleado()
+{
+}
+
 void procesarOpcion()
 {
      switch (opcion)
      {
      case 1:
-          /* code */
+          registrarEmpleado();
           break;
      case 2:
           /* code */
@@ -34,9 +38,9 @@ void menu()
                << "\n";
           cout << "1. registrar empleado"
                << "\n";
-          cout << "2. registrar entrads y salidas"
+          cout << "2. listar empleados"
                << "\n";
-          cout << "3. listar empleados"
+          cout << "3. buscar empleado por id"
                << "\n";
           cout << "4. Salir"
                << "\n";
