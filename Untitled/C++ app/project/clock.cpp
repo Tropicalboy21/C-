@@ -3,6 +3,10 @@ using namespace std;
 
 int opcion = 0;
 
+Empleado empleado;
+
+std::vector<empleado> empleados;
+
 void listarEmpleado()
 {
      for (int i = 0; i < 10; i++)
@@ -32,6 +36,8 @@ void registrarEmpleado()
      cout << "Porfavor ingrese la posición de trabajo: ";
      string puestoIn;
      cin >> puestoIn;
+
+     Empleado(nombreIn, identificacionIn, generoIn, edadIn, puestoIn);
 }
 
 void procesarOpcion()
