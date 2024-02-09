@@ -22,3 +22,5 @@ public:
         puesto = m;
     }
 };
+
+#endif
