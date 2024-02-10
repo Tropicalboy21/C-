@@ -4,9 +4,10 @@ using namespace std;
 
 int opcion = 0;
 
-Empleado empleado();
+p
 
-std::vector<empleado> empleados;
+    std::vector<empleado>
+        empleados;
 
 void listarEmpleado()
 {
