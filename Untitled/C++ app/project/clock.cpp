@@ -4,7 +4,7 @@ using namespace std;
 
 int opcion = 0;
 
-Empleado empleado;
+Empleado empleado();
 
 std::vector<empleado> empleados;
 
