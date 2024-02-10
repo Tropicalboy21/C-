@@ -4,11 +4,6 @@ using namespace std;
 
 int opcion = 0;
 
-p
-
-    std::vector<empleado>
-        empleados;
-
 void listarEmpleado()
 {
      for (int i = 0; i < 10; i++)
