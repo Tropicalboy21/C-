@@ -12,7 +12,7 @@ public:
     string nombre, identificacion, genero, puesto;
     int edad;
 
-    Empleado(string nombre = "Lenin", string identificacion = "ugaldeav", string genero = "M", int edad = 23, string puesto = "Prod");
+    Empleado(string nombre, string identificacion, string genero, int edad, string puesto);
 };
 
 #endif
