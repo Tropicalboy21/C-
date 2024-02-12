@@ -38,7 +38,9 @@ void registrarEmpleado()
 
      empleado.nombre = nombreIn;
 
-     cout << empleado.nombre;
+     string nombre = empleado.nombre;
+
+     cout << nombre;
 }
 
 void procesarOpcion()

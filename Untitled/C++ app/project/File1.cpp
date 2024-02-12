@@ -2,4 +2,11 @@
 #include "File1.h"
 #include <iostream>
 
-Empleado::Empleado(){};
+Empleado::Empleado(string nombre, string identificacion, string genero, int edad, string puesto)
+{
+    this->nombre = nombre;
+    this->identificacion = identificacion;
+    this->genero = genero;
+    this->edad = edad;
+    this->puesto = puesto;
+};

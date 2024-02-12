@@ -1,0 +1,1 @@
+    cout << empleado.nombre;
