@@ -9,11 +9,10 @@ class Empleado
 {
 public:
     Empleado();
-    string nombre;
-    string identificacion;
-    string genero;
+    string nombre, identificacion, genero, puesto;
     int edad;
-    string puesto;
+
+    Empleado(string nombre = "Lenin", string identificacion = "ugaldeav", string genero = "M", int edad = 23, string puesto = "Prod");
 };
 
 #endif

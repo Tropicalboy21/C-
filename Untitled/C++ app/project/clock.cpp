@@ -34,13 +34,9 @@ void registrarEmpleado()
      string puestoIn;
      cin >> puestoIn;
 
-     Empleado empleado;
+     Empleado empleado(nombreIn, identificacionIn, generoIn, edadIn, puestoIn);
 
-     empleado.nombre = nombreIn;
-
-     string nombre = empleado.nombre;
-
-     cout << nombre;
+     cout << empleado.nombre;
 }
 
 void procesarOpcion()
