@@ -2,7 +2,4 @@
 #include "File1.h"
 #include <iostream>
 
-Empleado::Empleado()
-{
-    nombre = "lenin";
-};
+Empleado::Empleado(){};
