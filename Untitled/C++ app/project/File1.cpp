@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-Empleado::Empleado(string nombre, string identificacion, string genero, int edad, string puesto)
+Empleado::Empleado(string nombre, string identificacion, string genero, string puesto, string edad)
 {
     nombre = nombre;
     identificacion = identificacion;
     genero = genero;
-    edad = edad;
     puesto = puesto;
+    edad = edad;
 };

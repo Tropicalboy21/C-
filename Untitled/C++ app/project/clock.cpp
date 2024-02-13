@@ -27,7 +27,7 @@ void registrarEmpleado()
      cin >> generoIn;
 
      cout << "Porfavor ingrese la edad: ";
-     int edadIn;
+     string edadIn;
      cin >> edadIn;
 
      cout << "Porfavor ingrese la posición de trabajo: ";
