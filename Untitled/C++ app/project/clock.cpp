@@ -47,7 +47,7 @@ void procesarOpcion()
           registrarEmpleado();
           break;
      case 2:
-          /* code */
+          listarEmpleado();
           break;
      case 3:
           /* code */
