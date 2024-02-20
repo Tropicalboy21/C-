@@ -1,1 +1,0 @@
-Empleado(string nombre, string identificacion, string genero, int edad, string puesto)
