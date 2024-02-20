@@ -39,7 +39,7 @@ void registrarEmpleado()
      // cout << empleado.nombre;
 }
 
-void procesarOpcion()
+void procesarOpcion(int opcion)
 {
      switch (opcion)
      {
@@ -78,7 +78,7 @@ void menu()
                << "\n";
           cout << "Porfavor selecione una opcion: ";
           cin >> opcion;
-          //    procesarOpcion(opcion);
+          procesarOpcion(opcion);
      } while (opcion != 5);
 }
 
