@@ -12,25 +12,6 @@ void listarEmpleado()
      }
 }
 
-void procesarOpcion()
-{
-     switch (opcion)
-     {
-     case 1:
-          registrarEmpleado();
-          break;
-     case 2:
-          listarEmpleado();
-          break;
-     case 3:
-          /* code */
-          break;
-
-     default:
-          break;
-     }
-}
-
 void registrarEmpleado()
 {
      cout << "digite el nombre del empleado";
@@ -56,6 +37,25 @@ void registrarEmpleado()
      // Empleado empleado(nombreIn, identificacionIn, generoIn, edadIn, puestoIn);
 
      // cout << empleado.nombre;
+}
+
+void procesarOpcion()
+{
+     switch (opcion)
+     {
+     case 1:
+          registrarEmpleado();
+          break;
+     case 2:
+          listarEmpleado();
+          break;
+     case 3:
+          /* code */
+          break;
+
+     default:
+          break;
+     }
 }
 
 void menu()
