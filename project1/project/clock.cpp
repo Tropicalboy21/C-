@@ -4,11 +4,15 @@ using namespace std;
 
 int opcion = 0;
 
+std::vector<Empleado> listaEmpleados;
+
+int l = sizeof(listaEmpleados);
+
 void listarEmpleado()
 {
-     for (int i = 0; i < 10; i++)
+     for (int i = 0; i < l; i++)
      {
-          cout << "hello world";
+          cout << listaEmpleados(i);
      }
 }
 
@@ -34,7 +38,9 @@ void registrarEmpleado()
      string puestoIn;
      cin >> puestoIn;
 
-     // Empleado empleado(nombreIn, identificacionIn, generoIn, edadIn, puestoIn);
+     Empleado nuevoEmpleado(nombreIn, identificacionIn, generoIn, edadIn, puestoIn);
+
+     listaEmpleados.push_back(nuevoEmpleado);
 
      // cout << empleado.nombre;
 }
