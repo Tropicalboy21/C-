@@ -18,6 +18,7 @@ private:
 
 int main()
 {
-
+    myClass obj(42);
+    std::cout << obj.toString() << std::endl;
     return 0;
 }
