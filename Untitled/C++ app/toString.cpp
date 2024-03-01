@@ -1,11 +1,14 @@
 #include <iostream>
-#include <String>
+#include <string>
 using namespace std;
 
-class myClass
+class MyClass
 {
 public:
-    myClass(int value) : value(value) {}
+    MyClass(int value)
+    {
+        value = value;
+    }
 
     std::string toString() const
     {
@@ -18,7 +21,7 @@ private:
 
 int main()
 {
-    myClass obj(42);
+    MyClass obj(42);
     std::cout << obj.toString() << std::endl;
     return 0;
 }
