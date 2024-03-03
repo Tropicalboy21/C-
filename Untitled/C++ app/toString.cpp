@@ -5,7 +5,7 @@ using namespace std;
 class Empleado
 {
 public:
-    Empleado(string value, string apellido) : nombre(nombre), apellido(apellido)
+    Empleado(string nombre, string apellido) : nombre(nombre), apellido(apellido)
     {
     }
 
