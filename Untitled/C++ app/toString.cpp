@@ -2,26 +2,26 @@
 #include <string>
 using namespace std;
 
-class MyClass
+class Empleado
 {
 public:
-    MyClass(int value)
+    Empleado(string value, string apellido) : nombre(nombre), apellido(apellido)
     {
-        value = value;
     }
 
     std::string toString() const
     {
-        return "MyClass(" + value + ")";
+        return "Empleado\nnombre : " + nombre + "\napellido : " + apellido;
     }
 
 private:
-    int value;
+    string nombre;
+    string apellido;
 };
 
 int main()
 {
-    MyClass obj(42);
-    std::cout << obj.toString() << std::endl;
+    Empleado nuevoEmpleado("julian", "Martinez");
+    std::cout << nuevoEmpleado.toString() << std::endl;
     return 0;
 }
