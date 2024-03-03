@@ -12,7 +12,7 @@ public:
 
     std::string toString() const
     {
-        return "MyClass(" + std::to_string(value) + ")";
+        return "MyClass(" + value + ")";
     }
 
 private:
