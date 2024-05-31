@@ -118,7 +118,7 @@ void Ord_Num_Des(int value1, int value2, int value3)
         }
     }
 
-    cout << "los valores en orden ascendete son: " << endl;
+    cout << "los valores en orden descendente son: " << endl;
     cout << tercerValor << " ";
     cout << segundoValor << " ";
     cout << primerValor << endl;
@@ -135,7 +135,7 @@ void Promedio(int value1, int value2, int value3)
 
     promedio = suma / n;
 
-    cout << "El promedio de los numeros " << value1 << ", " << value2 << "y " << value3 << " es: " << promedio << endl;
+    cout << "El promedio de los numeros " << value1 << ", " << value2 << " y " << value3 << " es: " << promedio << endl;
 }
 
 void Aumentar(int value1, int value2, int value3)
@@ -251,7 +251,7 @@ void Menor(int value1, int value2, int value3)
         }
     }
 
-    cout << "Entre los números " << value1 << ", " << value2 << ", " << value3 << "el mayor es: " << minNum << "." << endl;
+    cout << "Entre los números " << value1 << ", " << value2 << ", " << value3 << "el menor es: " << minNum << "." << endl;
 }
 
 void procesarOpcion(int opcion)
@@ -280,9 +280,6 @@ void procesarOpcion(int opcion)
         break;
     case 6:
         Menor(valor1, valor2, valor3);
-        break;
-    case 7:
-        cout << "Gracias, hasta pronto" << endl;
         break;
     default:
         cout << "Opcion Invalida" << endl;
@@ -315,11 +312,11 @@ void menu()
         cout << "Ingrese una opcion: ";
         cin >> opcion;
 
-        if (opcion >= 1 && opcion <= 7)
+        if (opcion >= 1 && opcion <= 6)
         {
             procesarOpcion(opcion);
         }
-        else
+        else if (opcion != 7)
         {
             cout << "Opcion invalida" << endl;
             cout << "Presione enter para continuar...";
@@ -327,10 +324,10 @@ void menu()
             cin.get();
         }
     } while (opcion != 7);
+    cout << "Gracias, hasta pronto" << endl;
 }
 
 int main()
 {
-
     menu();
 }
