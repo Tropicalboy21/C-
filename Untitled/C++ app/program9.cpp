@@ -12,7 +12,7 @@ void ordenarDescendentemente(int value1, int value2, int value3)
         if (value2 <= value3)
         {
             segundoValor = value2;
-            tercerValor = value3;
+            primerValor = value3;
         }
         else
         {
@@ -49,10 +49,10 @@ void ordenarDescendentemente(int value1, int value2, int value3)
         }
     }
 
-    cout << "los valores en orden ascendete son: " << endl;
-    cout << primerValor << " ";
+    cout << "los valores en orden descendente son: " << endl;
+    cout << tercerValor << " ";
     cout << segundoValor << " ";
-    cout << tercerValor << endl;
+    cout << primerValor << endl;
 }
 
 int main()
