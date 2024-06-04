@@ -10,4 +10,8 @@ int main()
     cin >> cant;
 
     int edades[cant];
+
+    for (int i = 0; i < cant; i++)
+    {
+    }
 }
